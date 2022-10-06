@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+ </head>
+ 
+ <label> Enter Code </label> <br>
+ <input type="number" name="" id="evenOdd" onkeyup="isCheck()">
+ <span id="showMssg" style="color: #342BFA;">  </span>
+</br><br>
+
+
+
+<script>
+ 
+function isCheck(){
+ var num = document.getElementById('evenOdd').value;
+ // alert(num);
+ if((num%2) == 0){
+ document.getElementById('showMssg').innerHTML = " Code "+num+" is Tiger ";
+ }
+ else{
+ document.getElementById('showMssg').innerHTML = " Code "+num+" is Dragon";
+ }
+
+ if(num === ""){
+ document.getElementById('showMssg').innerHTML = "";
+ }
+}
+
+function isChecks(){
+ var num = document.getElementById('evenOdds').value;
+ // alert(num);
+ if((num%2) == 0){
+ document.getElementById('showMssgs').innerHTML = "Period"+num+"  is Red";
+ }
+ else{
+ document.getElementById('showMssgs').innerHTML = "Period "+num+"  is Green";
+ }
+
+ if(num === ""){
+ document.getElementById('showMssgs').innerHTML = "";
+ }
+}
+
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
